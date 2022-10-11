@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 
 function Header() {
@@ -29,12 +30,7 @@ function Header() {
   </div>
   </div>
  {/* heading section */}
-<div className='bg-black h-80 w-[95%] m-auto'>
- <div className=''>
-  
- </div>
 
-</div>
 </div>
   )
 }

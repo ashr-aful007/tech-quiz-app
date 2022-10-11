@@ -18,7 +18,12 @@ function App() {
             element: <Home></Home>,           
           },
           {
-            path: '/topic',
+            path: '/topic/:topicId',
+            loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/1${params.topicId}`),
+            element: <Topic></Topic>
+          },
+          {
+            path:'/topic',
             element: <Topic></Topic>
           },
           {
@@ -36,7 +41,7 @@ function App() {
 
   return (
     <div className="App">  
-        <div className='h-screen relative bg-gradient-to-br from-indigo-700 to-purple-500 overflow-hidden'>
+        <div className=' relative bg-gradient-to-br from-indigo-700 to-purple-500'>
         <RouterProvider router={router}>
 
         </RouterProvider>
