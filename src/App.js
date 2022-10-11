@@ -19,7 +19,7 @@ function App() {
           },
           {
             path: '/topic/:topicId',
-            loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/1${params.topicId}`),
+            loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`),
             element: <Topic></Topic>
           },
           {
