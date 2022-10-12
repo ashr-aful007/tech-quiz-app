@@ -5,9 +5,7 @@ import ShowQoption from '../ShowQoption/ShowQoption';
 function Topic() {
   const quizTopic = useLoaderData()
   const quizdata = quizTopic.data.questions
-  
-  
-  
+
   return (
     <div>
      {
