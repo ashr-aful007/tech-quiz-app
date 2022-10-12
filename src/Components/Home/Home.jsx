@@ -5,7 +5,6 @@ import Showquizzs from '../Showquizzs/Showquizzs';
 function Home() {
   const allQuiz = useLoaderData()
   const quizdata = allQuiz.data;
-  
   return (
 
     <div>
@@ -17,8 +16,8 @@ function Home() {
       quizdata.map(quizess => <Showquizzs
       key={quizess.id}
       quizess={quizess}
-      ></Showquizzs>)
-     }
+      ></Showquizzs>)      
+     }    
       </div>
       </div>
     

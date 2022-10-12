@@ -8,7 +8,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 
 
-const ShowQoption = ({quiz}) => {    
+const ShowQoption = ({quiz}) => {   
      const {correctAnswer, id, options , question} = quiz;
     
     
@@ -60,8 +60,9 @@ const ShowQoption = ({quiz}) => {
           }
      
      return (
-          <div className='bg-blue-900 rounded-md w-9/12 mx-auto overflow-hidden p-4 text-white mt-10'>
-                 <button onClick={()=> showCorroctAns(correctAnswer)} className='flex flex-col justify-items-start items-start btn bg-blue-900 hover:bg-blue-900 outline-none'><FontAwesomeIcon icon={faEye} /></button> 
+          <div>              
+          <div className='bg-blue-900 rounded-md w-9/12 mx-auto overflow-hidden p-4 text-white mt-10'>              
+                 <button onClick={()=> showCorroctAns(correctAnswer)} className='flex flex-col justify-items-start items-start btn bg-blue-900 hover:bg-blue-900 outline-none'><FontAwesomeIcon icon={faEye} /></button>  
                <p>Question: {question}</p>
                <div className='grid grid-cols-2 mx-auto mb-3'>         
                {
@@ -74,6 +75,7 @@ const ShowQoption = ({quiz}) => {
                          )
                }             
                </div>
+          </div>
           </div>
      );
 };
